@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>mastery hub of rwanda | Modern Web Solutions</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --primary: #2563eb;
+  --dark: #0f172a;
+  --gray: #64748b;
+  --light: #f8fafc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: black;
+  color: var(--dark);
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* NAVBAR */
+.navbar {
+  background: white;
+  padding: 20px 0;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--dark);
+  margin-left: 25px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--primary);
+}
+
+/* HERO */
+.hero {
+  padding: 120px 0 100px;
+  text-align: center;
+  background: white;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  color: var(--gray);
+  max-width: 600px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background: var(--primary);
+  color: white;
+  padding: 12px 28px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* ABOUT */
+.section {
+  padding: 100px 0;
+}
+
+.section h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.section p {
+  text-align: center;
+  color: var(--gray);
+  max-width: 700px;
+  margin: auto;
+}
+
+/* MEMBERS */
+.team-grid {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.card img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  margin-bottom: 5px;
+}
+
+.card span {
+  color: var(--gray);
+  font-size: 14px;
+}
+
+/* CONTACT */
+.contact {
+  background: white;
+  border-radius: 12px;
+  padding: 40px;
+  margin-top: 50px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.contact form {
+  display: grid;
+  gap: 20px;
+}
+
+.contact input,
+.contact textarea {
+  padding: 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.contact button {
+  border: none;
+  cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 30px 0;
+  margin-top: 80px;
+  color: var(--gray);
+  font-size: 14px;
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="navbar">
+  <div class="container">
+    <div class="logo">NGABO studio</div>
+    <div class="nav-links">
+      <a href="#about us.html">About</a>
+      <a href="#team">Team</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <h1>We Build Modern Web Experiences</h1>
+    <p>
+      Professional web development solutions focused on performance,
+      clean design, and scalable architecture.
+    </p>
+    <a href="#contact" class="btn">Work With Us</a>
+  </div>
+</section>
+<!-- TEAM -->
+<section id="team" class="section">
+  <div class="container">
+    <h2>Our Team</h2>
+
+    <div class="team-grid">
+      <div class="card">
+        <img src="IMG_20230606_235847_778.jpg" alt="">
+        <h3>NGABO</h3>
+        <span>Frontend Engineer</span>
+      </div>
+
+      <div class="card">
+        <img src="IMG_20250406_183631_970.jpg" alt="">
+        <h3>NGABO</h3>
+        <span>Backend Engineer</span>
+      </div>
+
+      <div class="card">
+        <img src="IMG_20251015_163812_330.jpg" alt="">
+        <h3>NGABO</h3>
+        <span>Product Designer</span>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="about" class="section">
+  <div class="container">
+    <h2>About Us</h2>
+    <p>
+     mastery hub of rwanda is a team of experienced developers and designers
+      building scalable, maintainable, and high-performance web applications.
+      We believe in clean code, thoughtful UI, and long-term solutions.
+    </p>
+  </div>
+</section>
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <div class="container">
+    <h2>Contact Us</h2>
+
+    <div class="contact">
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button class="btn">Send Message</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  © 2026 mastery hub of rwanda. All rights reserved.
+</footer>
+
+</body>
+</html>
